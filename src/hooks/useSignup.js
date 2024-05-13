@@ -18,7 +18,7 @@ export const useSignUp = () => {
       console.log(res.user);
 
       if (!res) {
-        throw new Error("Could not complete sighup");
+        throw new Error("Could not complete sign up!");
       }
 
       // Add Display name for User
