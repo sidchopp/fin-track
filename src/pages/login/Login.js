@@ -14,7 +14,7 @@ const Login = () => {
 
   return (
     <form onSubmit={handleSubmit} className={styles["login-form"]}>
-      <h2>login</h2>
+      <h2>Log In</h2>
       <label>
         <span>email:</span>
         <input
@@ -31,12 +31,7 @@ const Login = () => {
           value={password}
         />
       </label>
-      {!isPending && <button className="btn">Login</button>}
-      {isPending && (
-        <button className="btn" disabled>
-          Loading
-        </button>
-      )}
+      {isPending ? <p>Loading..</p> : <button className="btn">Log In</button>}
       {error && <p>{error}</p>}
     </form>
   );

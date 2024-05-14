@@ -40,13 +40,7 @@ const Signup = () => {
           value={password}
         />
       </label>
-
-      {!isPending && <button className="btn">sign up</button>}
-      {isPending && (
-        <button className="btn" disabled>
-          loading
-        </button>
-      )}
+      {isPending ? <p>Loading..</p> : <button className="btn">Sign Up</button>}
       {error && <p>{error}</p>}
     </form>
   );
