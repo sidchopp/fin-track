@@ -1,0 +1,16 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // "transactions" is thre name of our collection in DB
+    match /transactions/{document=**} {
+
+      // Allow on authenticaton User to create a new transaction
+      allow create: if request.auth != null;
+
+      // Logged User Id must match the document/resource creater to do read/write operations
+      allow read, delete: if request.auth.uid == resource.data.uid;
+    }
+  }
+}
