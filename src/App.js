@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useAuthContext } from "./hooks/useAuthContext";
 import { Home, Login, Signup } from "./pages";
-import { Navbar } from "./components";
+import { Navbar, Footer } from "./components";
 
 function App() {
   const { authIsReady, user } = useAuthContext();
@@ -24,6 +24,7 @@ function App() {
               element={user ? <Navigate to="/" /> : <Signup />}
             />
           </Routes>
+          <Footer />
         </BrowserRouter>
       )}
     </div>
