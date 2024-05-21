@@ -2,12 +2,17 @@ import { useFirestore } from "../../hooks/useFirestore";
 import styles from "./Home.module.css";
 
 function TransactionList({ transactions }) {
-  const { deleteDocument, response } = useFirestore("transactions");
-  console.log(response);
+  const { deleteDocument } = useFirestore("transactions");
+  console.log(transactions);
   return (
-    <>
+    <div className={styles.transactions}>
       <h3>My Transactions</h3>
-      <ul className={styles.transactions}>
+      {transactions.length === 0 && (
+        <p className={styles.myTransactions}>
+          You have no transaction yet. You have to add a transaction first.
+        </p>
+      )}
+      <ul>
         {transactions.map((transaction) => (
           <li key={transaction.id}>
             <p className={styles.name}>{transaction.name}</p>
@@ -16,7 +21,7 @@ function TransactionList({ transactions }) {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   );
 }
 
