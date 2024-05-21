@@ -64,8 +64,6 @@
     margin: 10px;
 }
 
-
-
 @media screen and (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
@@ -94,7 +92,7 @@
 
 .transactions .name {
     color: #777;
-    font-size: 1.4em;
+    /* font-size: 1.1em; */
 }
 
 .transactions .amount {
@@ -102,7 +100,7 @@
     margin-right: 40px;
     color: #777;
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.1em;
 }
 
 .transactions button {

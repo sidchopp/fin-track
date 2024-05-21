@@ -19,6 +19,10 @@
     font-size: 1.2em;
 }
 
+.name {
+    font-weight: bold;
+}
+
 .navbar button,
 .navbar a {
     margin-left: 16px;
@@ -27,4 +31,19 @@
 .navbar a {
     color: #333;
     text-decoration: none;
+}
+
+@media screen and (max-width: 350px) {
+    .title {
+        font-size: 0.9em;
+    }
+    .name {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .title {
+        display: none;
+    }
 }

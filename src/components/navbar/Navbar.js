@@ -9,10 +9,12 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <ul>
-        <li className={styles.title}>Finance Tracker</li>
+        <li className={styles.title}>FinTrack</li>
         {user ? (
           <>
-            <li>Hello, {user.displayName}</li>
+            <li>
+              Hi, <span className={styles.name}>{user.displayName}</span>
+            </li>
             <li>
               <button className="btn" onClick={logout}>
                 Logout

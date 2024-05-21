@@ -4,10 +4,7 @@ import styles from "./Footer.module.css";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <h3>
-        Finance Tracker
-        <span> © 2024. All Rights Reserved.</span>
-      </h3>
+      <div className={styles.year}>© 2024. All Rights Reserved.</div>
       <Link to="https://sid-projects.netlify.app/" target="blank">
         My Other projects
       </Link>

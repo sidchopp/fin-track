@@ -1,12 +1,10 @@
-import style from "./Hero.module.css";
+import styles from "./Hero.module.css";
 
 const Hero = () => {
   return (
-    <div className={style.hero}>
+    <div className={styles.hero}>
       <h1>Achieve Your Financial Dreams</h1>
-      <p>
-        Plan, save, and invest wisely with this comprehensive financial tool.
-      </p>
+      <p>Plan, save, and invest wisely with this financial tracker.</p>
     </div>
   );
 };
