@@ -26,8 +26,6 @@ export const AuthContextProvider = ({ children }) => {
     }
   );
 
-  console.log("state", state);
-
   // sets up a listener for authentication state changes and
   // dispatches an action when the state, which is user here, changes
   useEffect(() => {

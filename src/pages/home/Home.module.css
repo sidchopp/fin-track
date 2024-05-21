@@ -109,8 +109,8 @@
     position: absolute;
     top: 0;
     right: 0;
-    background: #ddd;
-    color: #777;
+    background: red;
+    color: black;
     border: none;
     padding: 12px 8px;
     text-align: center;

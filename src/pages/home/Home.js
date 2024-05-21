@@ -12,7 +12,6 @@ function Home() {
     ["createdAt", "desc"]
   );
 
-  console.log(user);
   return (
     <div className={styles.container}>
       <div className={styles.content}>
