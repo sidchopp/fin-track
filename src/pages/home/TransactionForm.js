@@ -5,8 +5,8 @@ function TransactionForm({ uid }) {
   const [name, setName] = useState("");
   const [amount, setAmount] = useState("");
 
-  // name of our document in DB is "transaction"
-  const { addDocument, response } = useFirestore("transaction");
+  // name of our document in DB is "transactions"
+  const { addDocument, response } = useFirestore("transactions");
 
   const handleSubmit = (e) => {
     e.preventDefault();
