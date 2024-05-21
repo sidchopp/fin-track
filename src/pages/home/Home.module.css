@@ -64,6 +64,21 @@
     margin: 10px;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        padding: 10px;
+    }
+    .content {
+        padding: 0 5px;
+    }
+
+}
+
 /* transactions */
 .transactions li {
     margin: 30px auto;
