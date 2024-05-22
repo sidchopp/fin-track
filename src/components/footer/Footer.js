@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.year}>© 2024. All Rights Reserved.</div>
-      <Link to="https://sid-projects.netlify.app/" target="blank">
+      <Link to="https://sid-chopra.netlify.app/" target="blank">
         My Other projects
       </Link>
     </div>
