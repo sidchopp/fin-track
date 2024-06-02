@@ -2,7 +2,6 @@ import { Dialog } from "../../components";
 import styles from "./Home.module.css";
 
 function TransactionList({ transactions }) {
-  console.log(transactions);
   return (
     <div className={styles.transactions}>
       <h3>My Transactions</h3>
